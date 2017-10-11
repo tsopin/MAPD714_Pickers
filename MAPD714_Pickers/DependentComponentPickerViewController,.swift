@@ -2,11 +2,10 @@
 
 import UIKit
 
-class ViewController: UITabBarController {
+class DependentComponentPickerViewController_: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-    }
 
+}
 }
