@@ -39,7 +39,23 @@
                     <view key="view" contentMode="scaleToFill" id="mpw-s8-U4q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Tl-Zw-cSL">
+                                <rect key="frame" x="165" y="318" width="44" height="30"/>
+                                <state key="normal" title="Select"/>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqM-gT-3xq">
+                                <rect key="frame" x="0.0" y="28" width="375" height="216"/>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lqM-gT-3xq" firstAttribute="top" secondItem="IpP-xO-cvd" secondAttribute="bottom" constant="8" symbolic="YES" id="2hO-2r-v7P"/>
+                            <constraint firstItem="lqM-gT-3xq" firstAttribute="leading" secondItem="mpw-s8-U4q" secondAttribute="leading" id="IgV-Hj-LJv"/>
+                            <constraint firstItem="lqM-gT-3xq" firstAttribute="centerX" secondItem="9Tl-Zw-cSL" secondAttribute="centerX" id="UM5-Km-fPe"/>
+                            <constraint firstItem="9Tl-Zw-cSL" firstAttribute="centerY" secondItem="mpw-s8-U4q" secondAttribute="centerY" id="aJC-8V-bGx"/>
+                            <constraint firstAttribute="trailing" secondItem="lqM-gT-3xq" secondAttribute="trailing" id="c4O-oB-K9A"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dependent" image="dependenticon" id="uv0-0w-hj9"/>
                 </viewController>
@@ -58,7 +74,26 @@
                     <view key="view" contentMode="scaleToFill" id="Rra-cw-Opp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WCx-Q7-OG6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEL-EO-rW6">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="buo-dP-SAO"/>
+                                </constraints>
+                                <state key="normal" title="Select"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GEL-EO-rW6" firstAttribute="centerX" secondItem="WCx-Q7-OG6" secondAttribute="centerX" id="3ey-XO-F67"/>
+                            <constraint firstItem="WCx-Q7-OG6" firstAttribute="top" secondItem="rnx-wI-C3I" secondAttribute="bottom" id="7RQ-9z-NM3"/>
+                            <constraint firstItem="GEL-EO-rW6" firstAttribute="centerY" secondItem="Rra-cw-Opp" secondAttribute="centerY" id="Kwo-LK-Jh1"/>
+                            <constraint firstAttribute="trailing" secondItem="WCx-Q7-OG6" secondAttribute="trailing" id="SR3-QE-nK0"/>
+                            <constraint firstItem="WCx-Q7-OG6" firstAttribute="leading" secondItem="Rra-cw-Opp" secondAttribute="leading" id="y7R-ua-QEf"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Double" image="doubleicon" id="I7i-uT-VVn"/>
                 </viewController>
@@ -77,7 +112,35 @@
                     <view key="view" contentMode="scaleToFill" id="fUH-pT-PoP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="WFs-Ed-yfH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="529457144.49281901">
+                                    <!--2017-10-11 23:25:44 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                    <!--1970-01-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                                    <!--2037-12-31 11:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03O-KC-CSD">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="a38-l1-dYl"/>
+                                </constraints>
+                                <state key="normal" title="Select"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="03O-KC-CSD" firstAttribute="centerY" secondItem="fUH-pT-PoP" secondAttribute="centerY" id="2Gd-NQ-sYz"/>
+                            <constraint firstItem="WFs-Ed-yfH" firstAttribute="top" secondItem="fUH-pT-PoP" secondAttribute="top" id="8jU-cF-BBM"/>
+                            <constraint firstItem="WFs-Ed-yfH" firstAttribute="leading" secondItem="fUH-pT-PoP" secondAttribute="leading" id="NTT-ZV-iFM"/>
+                            <constraint firstItem="03O-KC-CSD" firstAttribute="centerX" secondItem="WFs-Ed-yfH" secondAttribute="centerX" id="jH8-Jd-c3Y"/>
+                            <constraint firstAttribute="trailing" secondItem="WFs-Ed-yfH" secondAttribute="trailing" id="mi8-Lh-BEF"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Date" image="clockicon" id="Y2X-rh-67c"/>
                 </viewController>
@@ -96,7 +159,26 @@
                     <view key="view" contentMode="scaleToFill" id="qWi-Ce-Hnc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1YD-6j-QRy">
+                                <rect key="frame" x="0.0" y="28" width="375" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4G-2P-7eA">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="kzM-yb-y0m"/>
+                                </constraints>
+                                <state key="normal" title="Select"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m4G-2P-7eA" firstAttribute="centerY" secondItem="qWi-Ce-Hnc" secondAttribute="centerY" id="1hM-Ah-eOd"/>
+                            <constraint firstItem="1YD-6j-QRy" firstAttribute="leading" secondItem="qWi-Ce-Hnc" secondAttribute="leading" id="9Aw-aE-DXW"/>
+                            <constraint firstItem="1YD-6j-QRy" firstAttribute="top" secondItem="nlG-kY-Aoh" secondAttribute="bottom" constant="8" symbolic="YES" id="Ht7-hC-slm"/>
+                            <constraint firstAttribute="trailing" secondItem="1YD-6j-QRy" secondAttribute="trailing" id="Pd0-rJ-qOB"/>
+                            <constraint firstItem="m4G-2P-7eA" firstAttribute="centerX" secondItem="1YD-6j-QRy" secondAttribute="centerX" id="jnO-Ta-bAR"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Single" image="singleicon" id="Qp6-s2-Tfb"/>
                 </viewController>
